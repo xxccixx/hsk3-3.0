@@ -1,0 +1,438 @@
+/* HSK 3 Study Site - shared styles (dark theme) */
+:root {
+  --accent: #7c6cf0;
+  --accent-dark: #6353d6;
+  --accent-light: rgba(124, 108, 240, 0.16);
+  --bg: #0f1117;
+  --card-bg: #1a1d27;
+  --card-bg-alt: #20242f;
+  --text: #eceaf5;
+  --text-soft: #9a9db0;
+  --border: #2b2f3f;
+  --green: #3ecf8e;
+  --green-bg: rgba(62, 207, 142, 0.14);
+  --red: #ff6b6b;
+  --red-bg: rgba(255, 107, 107, 0.14);
+  --radius: 14px;
+  --shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  padding-bottom: 40px;
+}
+
+header.site-header {
+  background: linear-gradient(135deg, #23273a, #171a24);
+  border-bottom: 1px solid var(--border);
+  color: #fff;
+  padding: 22px 16px;
+}
+
+header.site-header .inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header.site-header h1 {
+  margin: 0 0 4px 0;
+  font-size: 1.4rem;
+}
+
+header.site-header p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
+.breadcrumb {
+  max-width: 900px;
+  margin: 14px auto 0 auto;
+  padding: 0 16px;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Lesson list on homepage */
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.lesson-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: var(--shadow);
+  display: block;
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+
+.lesson-card:active { transform: scale(0.98); }
+.lesson-card:hover { border-color: var(--accent); }
+
+.lesson-card .lesson-num {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 999px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.lesson-card h3 {
+  margin: 0 0 2px 0;
+  font-size: 1.1rem;
+}
+
+.lesson-card .en-title {
+  color: var(--text-soft);
+  font-size: 0.88rem;
+  margin: 0 0 8px 0;
+}
+
+.lesson-card .meta {
+  font-size: 0.82rem;
+  color: var(--text-soft);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge-score {
+  background: var(--accent-light);
+  color: #b3a8ff;
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+/* Section tabs on lesson page */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin: 18px 0 14px 0;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 9px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.tab-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* Vocab table */
+table.vocab-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+table.vocab-table th, table.vocab-table td {
+  padding: 10px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+table.vocab-table th {
+  background: var(--card-bg-alt);
+  color: #b3a8ff;
+  font-size: 0.85rem;
+  position: sticky;
+  top: 0;
+}
+
+table.vocab-table .hanzi-cell {
+  font-size: 1.6rem;
+  font-weight: 700;
+  white-space: nowrap;
+  color: var(--text);
+}
+
+table.vocab-table .pinyin-cell {
+  color: #b3a8ff;
+  white-space: nowrap;
+}
+
+table.vocab-table .pos-cell {
+  font-style: italic;
+  color: var(--text-soft);
+  white-space: nowrap;
+}
+
+table.vocab-table .example-cell {
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
+.vocab-table-wrap {
+  overflow-x: auto;
+}
+
+/* Flashcards */
+.flashcard-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.flashcard-controls button {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #b3a8ff;
+}
+
+.flashcard-counter {
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+
+.flashcard {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 20px;
+  text-align: center;
+  user-select: none;
+}
+
+.flashcard .hanzi-big {
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.flashcard.flipped .hanzi-big { display: none; }
+
+.flashcard .back-content { display: none; }
+.flashcard.flipped .back-content { display: block; }
+
+.flashcard .back-content .pinyin-big {
+  font-size: 1.8rem;
+  color: #b3a8ff;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.flashcard .back-content .pos-line {
+  font-style: italic;
+  color: var(--text-soft);
+  margin-bottom: 8px;
+}
+
+.flashcard .back-content .meaning-line {
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.flashcard .back-content .example-line {
+  font-size: 1rem;
+  color: var(--text-soft);
+  border-top: 1px dashed var(--border);
+  padding-top: 10px;
+}
+
+.flashcard-hint {
+  text-align: center;
+  color: var(--text-soft);
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+.flashcard-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+  gap: 10px;
+}
+
+.flashcard-nav button {
+  flex: 1;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.flashcard-nav button:disabled {
+  background: var(--card-bg-alt);
+  color: var(--text-soft);
+  cursor: default;
+}
+
+/* Quiz */
+.quiz-intro {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.quiz-intro button, .quiz-actions button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.score-history {
+  margin-top: 14px;
+  font-size: 0.92rem;
+  color: var(--text-soft);
+}
+
+.quiz-question {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+  margin-bottom: 14px;
+}
+
+.quiz-question .q-progress {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  margin-bottom: 6px;
+}
+
+.quiz-question .q-prompt {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.quiz-question .q-prompt.small {
+  font-size: 1.3rem;
+  color: #b3a8ff;
+}
+
+.quiz-question .q-subtext {
+  color: var(--text-soft);
+  margin-bottom: 14px;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 10px;
+}
+
+.quiz-option {
+  background: var(--card-bg-alt);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 1.1rem;
+  text-align: left;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.quiz-option.correct {
+  border-color: var(--green);
+  background: var(--green-bg);
+}
+
+.quiz-option.wrong {
+  border-color: var(--red);
+  background: var(--red-bg);
+}
+
+.quiz-option:disabled { cursor: default; }
+
+.quiz-result {
+  text-align: center;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px 18px;
+  box-shadow: var(--shadow);
+}
+
+.quiz-result .score-big {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #b3a8ff;
+  margin: 10px 0;
+}
+
+footer.site-footer {
+  max-width: 900px;
+  margin: 30px auto 0 auto;
+  padding: 0 16px;
+  color: var(--text-soft);
+  font-size: 0.85rem;
+  display: flex;

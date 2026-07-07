@@ -1,0 +1,33 @@
+const LESSON_DATA = {
+  id: 9,
+  title_cn: "打不好没关系",
+  title_en: "It doesn't matter if you don't play well",
+  vocab: [
+    { hanzi: "校园", pinyin: "xiàoyuán", pos: "n.", meaning: "kampus", example: "校园里有很多树。" },
+    { hanzi: "卡", pinyin: "kǎ", pos: "n.", meaning: "kartu", example: "我忘了带校园卡。" },
+    { hanzi: "球场", pinyin: "qiúchǎng", pos: "n.", meaning: "lapangan (olahraga)", example: "他们在球场打篮球。" },
+    { hanzi: "为了", pinyin: "wèile", pos: "prep.", meaning: "demi; untuk", example: "为了准备考试,他每天都学习。" },
+    { hanzi: "运动会", pinyin: "yùndònghuì", pos: "n.", meaning: "acara olahraga; pekan olahraga", example: "学校下个月有运动会。" },
+    { hanzi: "男生", pinyin: "nánshēng", pos: "n.", meaning: "siswa laki-laki", example: "这个班有十个男生。" },
+    { hanzi: "练", pinyin: "liàn", pos: "v.", meaning: "berlatih", example: "他每天练一个小时网球。" },
+    { hanzi: "参加", pinyin: "cānjiā", pos: "v.", meaning: "mengikuti; berpartisipasi", example: "我打算参加运动会。" },
+    { hanzi: "网球", pinyin: "wǎngqiú", pos: "n.", meaning: "tenis", example: "她想学打网球。" },
+    { hanzi: "比赛", pinyin: "bǐsài", pos: "n./v.", meaning: "pertandingan; bertanding", example: "明天有一场足球比赛。" },
+    { hanzi: "练习", pinyin: "liànxí", pos: "v./n.", meaning: "berlatih; latihan", example: "多练习就能打得更好。" },
+    { hanzi: "好多", pinyin: "hǎoduō", pos: "num.", meaning: "banyak sekali", example: "公园里有好多人在锻炼。" },
+    { hanzi: "几乎", pinyin: "jīhū", pos: "adv.", meaning: "hampir", example: "我几乎忘了这件事。" },
+    { hanzi: "只是", pinyin: "zhǐshì", pos: "adv./conj.", meaning: "hanya; cuma", example: "我只是想问一个问题。" },
+    { hanzi: "啤酒", pinyin: "píjiǔ", pos: "n.", meaning: "bir", example: "他晚饭的时候喝了一瓶啤酒。" },
+    { hanzi: "回", pinyin: "huí", pos: "m.", meaning: "kali (kejadian)", example: "这是我第一回来这个球场。" },
+    { hanzi: "紧张", pinyin: "jǐnzhāng", pos: "adj.", meaning: "gugup; tegang", example: "比赛前他有点儿紧张。" },
+    { hanzi: "主要", pinyin: "zhǔyào", pos: "adj.", meaning: "utama", example: "他主要的问题是练习太少。" },
+    { hanzi: "受到", pinyin: "shòudào", pos: "v.", meaning: "mengalami; menerima", example: "他的比赛受到了天气的影响。" },
+    { hanzi: "影响", pinyin: "yǐngxiǎng", pos: "n./v.", meaning: "pengaruh; mempengaruhi", example: "天气对比赛有很大影响。" },
+    { hanzi: "得分", pinyin: "défēn", pos: "v./n.", meaning: "mencetak skor; skor", example: "他今天的比赛得分很高。" },
+    { hanzi: "体育", pinyin: "tǐyù", pos: "n.", meaning: "olahraga", example: "我很喜欢看体育比赛。" },
+    { hanzi: "世界", pinyin: "shìjiè", pos: "n.", meaning: "dunia", example: "这是世界上最有名的比赛。" },
+    { hanzi: "运动员", pinyin: "yùndòngyuán", pos: "n.", meaning: "atlet", example: "他是一名网球运动员。" },
+    { hanzi: "得到", pinyin: "dédào", pos: "v.", meaning: "mendapatkan", example: "她这次比赛得到了很好的成绩。" },
+    { hanzi: "成绩", pinyin: "chéngjì", pos: "n.", meaning: "hasil; prestasi", example: "他的学习成绩越来越好。" }
+  ]
+};

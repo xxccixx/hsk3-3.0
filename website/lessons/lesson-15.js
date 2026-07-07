@@ -1,0 +1,31 @@
+const LESSON_DATA = {
+  id: 15,
+  title_cn: "我是半个南京人",
+  title_en: "I am basically half a Nanjing local",
+  vocab: [
+    { hanzi: "蓝", pinyin: "lán", pos: "adj.", meaning: "biru", example: "蓝天小区的名字很好听。" },
+    { hanzi: "段", pinyin: "duàn", pos: "m.", meaning: "(kata bantu bilangan untuk periode waktu/jarak)", example: "您搬到这里一段时间了吧?" },
+    { hanzi: "附近", pinyin: "fùjìn", pos: "n.", meaning: "sekitar; dekat", example: "小区附近买东西很方便。" },
+    { hanzi: "马路", pinyin: "mǎlù", pos: "n.", meaning: "jalan raya", example: "过马路就是超市。" },
+    { hanzi: "平时", pinyin: "píngshí", pos: "n.", meaning: "biasanya", example: "平时孩子们在小区里玩。" },
+    { hanzi: "放学", pinyin: "fàngxué", pos: "v.", meaning: "pulang sekolah", example: "孩子们放学后就在树下做游戏。" },
+    { hanzi: "游戏", pinyin: "yóuxì", pos: "n.", meaning: "permainan", example: "他们喜欢在小区里做游戏。" },
+    { hanzi: "老人", pinyin: "lǎorén", pos: "n.", meaning: "orang tua; lansia", example: "小区里的老人挺多的。" },
+    { hanzi: "根据", pinyin: "gēnjù", pos: "prep./v.", meaning: "berdasarkan", example: "小区根据老人的需要做了很多变化。" },
+    { hanzi: "了解", pinyin: "liǎojiě", pos: "v.", meaning: "memahami; mengetahui", example: "我不太了解南京。" },
+    { hanzi: "可是", pinyin: "kěshì", pos: "conj.", meaning: "tetapi", example: "我不是南京人,可是我在南京上过大学。" },
+    { hanzi: "以上", pinyin: "yǐshàng", pos: "n.", meaning: "lebih dari", example: "南京有两千年以上的历史。" },
+    { hanzi: "有名", pinyin: "yǒumíng", pos: "adj.", meaning: "terkenal", example: "南京有很多有名的景点。" },
+    { hanzi: "景点", pinyin: "jǐngdiǎn", pos: "n.", meaning: "tempat wisata", example: "这个城市有不少著名的景点。" },
+    { hanzi: "游客", pinyin: "yóukè", pos: "n.", meaning: "wisatawan", example: "每年去南京旅游的游客特别多。" },
+    { hanzi: "外地", pinyin: "wàidì", pos: "n.", meaning: "daerah lain", example: "很多外地人不知道这个地方。" },
+    { hanzi: "聊", pinyin: "liáo", pos: "v.", meaning: "mengobrol", example: "咱们边吃边聊吧。" },
+    { hanzi: "河", pinyin: "hé", pos: "n.", meaning: "sungai", example: "这条河很长。" },
+    { hanzi: "关系", pinyin: "guānxì", pos: "n.", meaning: "hubungan", example: "这个名字跟颜色有关系。" },
+    { hanzi: "养", pinyin: "yǎng", pos: "v.", meaning: "memelihara", example: "这条河养了我们几千年。" },
+    { hanzi: "西北", pinyin: "xīběi", pos: "n.", meaning: "barat laut", example: "我小时候住在北京的西北边。" },
+    { hanzi: "经过", pinyin: "jīngguò", pos: "v./n.", meaning: "melewati; proses", example: "有一条河经过那里。" },
+    { hanzi: "草地", pinyin: "cǎodì", pos: "n.", meaning: "padang rumput", example: "河边有绿绿的草地。" },
+    { hanzi: "遇见", pinyin: "yùjiàn", pos: "v.", meaning: "bertemu", example: "我在河边遇见了一个老朋友。" }
+  ]
+};

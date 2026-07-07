@@ -1,0 +1,33 @@
+const LESSON_DATA = {
+  id: 16,
+  title_cn: "我听说有的熊猫出国了",
+  title_en: "I heard that some pandas have gone abroad",
+  vocab: [
+    { hanzi: "脏", pinyin: "zāng", pos: "adj.", meaning: "kotor", example: "这只猫身上很脏。" },
+    { hanzi: "可爱", pinyin: "kě'ài", pos: "adj.", meaning: "lucu; menggemaskan", example: "这只小猫真可爱。" },
+    { hanzi: "一会儿", pinyin: "yíhuìr", pos: "adv.", meaning: "sebentar; sesaat", example: "它一会儿跑,一会儿睡觉。" },
+    { hanzi: "脚", pinyin: "jiǎo", pos: "n.", meaning: "kaki", example: "小猫的脚很小。" },
+    { hanzi: "照顾", pinyin: "zhàogù", pos: "v.", meaning: "merawat", example: "我每天都照顾这只小猫。" },
+    { hanzi: "好像", pinyin: "hǎoxiàng", pos: "v.", meaning: "sepertinya", example: "它好像认识我了。" },
+    { hanzi: "认得", pinyin: "rènde", pos: "v.", meaning: "mengenali", example: "小猫已经认得我了。" },
+    { hanzi: "周末", pinyin: "zhōumò", pos: "n.", meaning: "akhir pekan", example: "周末我想去动物园看看。" },
+    { hanzi: "动物园", pinyin: "dòngwùyuán", pos: "n.", meaning: "kebun binatang", example: "北京动物园里有很多动物。" },
+    { hanzi: "动物", pinyin: "dòngwù", pos: "n.", meaning: "hewan", example: "我最喜欢的动物是熊猫。" },
+    { hanzi: "大熊猫", pinyin: "dàxióngmāo", pos: "n.", meaning: "panda raksasa", example: "大熊猫是中国特有的动物。" },
+    { hanzi: "奇怪", pinyin: "qíguài", pos: "adj.", meaning: "aneh", example: "熊猫的眼睛很奇怪,黑黑的。" },
+    { hanzi: "其实", pinyin: "qíshí", pos: "adv.", meaning: "sebenarnya", example: "其实熊猫每天要吃很多竹子。" },
+    { hanzi: "竹子", pinyin: "zhúzi", pos: "n.", meaning: "bambu", example: "熊猫最喜欢吃竹子。" },
+    { hanzi: "国宝", pinyin: "guóbǎo", pos: "n.", meaning: "harta nasional", example: "大熊猫是中国的国宝。" },
+    { hanzi: "全", pinyin: "quán", pos: "adj.", meaning: "seluruh; semua", example: "全世界的人都喜欢大熊猫。" },
+    { hanzi: "野生", pinyin: "yěshēng", pos: "adj.", meaning: "liar", example: "野生大熊猫越来越少了。" },
+    { hanzi: "关于", pinyin: "guānyú", pos: "prep.", meaning: "tentang", example: "这是一本关于大熊猫的书。" },
+    { hanzi: "饱", pinyin: "bǎo", pos: "adj.", meaning: "kenyang", example: "小猫已经吃饱了。" },
+    { hanzi: "张", pinyin: "zhāng", pos: "v.", meaning: "membuka", example: "熊猫张着嘴等着吃东西。" },
+    { hanzi: "嘴", pinyin: "zuǐ", pos: "n.", meaning: "mulut", example: "它的嘴边都是竹子。" },
+    { hanzi: "身边", pinyin: "shēnbiān", pos: "n.", meaning: "di samping; di sisi", example: "小猫喜欢待在我身边。" },
+    { hanzi: "半天", pinyin: "bàntiān", pos: "num.-m.", meaning: "cukup lama", example: "我等了半天它才过来。" },
+    { hanzi: "脸", pinyin: "liǎn", pos: "n.", meaning: "wajah", example: "它的脸圆圆的,很可爱。" },
+    { hanzi: "大人", pinyin: "dàren", pos: "n.", meaning: "orang dewasa", example: "大人和孩子都喜欢去动物园。" },
+    { hanzi: "喜爱", pinyin: "xǐ'ài", pos: "v.", meaning: "menyukai; menggemari", example: "大熊猫受到很多人的喜爱。" }
+  ]
+};

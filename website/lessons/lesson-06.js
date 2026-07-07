@@ -1,0 +1,33 @@
+const LESSON_DATA = {
+  id: 6,
+  title_cn: "高铁上还可以点外卖",
+  title_en: "You can even order takeout on a high-speed train",
+  vocab: [
+    { hanzi: "该", pinyin: "gāi", pos: "mod.", meaning: "seharusnya", example: "咱们该出发了。" },
+    { hanzi: "打算", pinyin: "dǎsuàn", pos: "v./n.", meaning: "berencana; rencana", example: "你打算怎么去北京?" },
+    { hanzi: "高铁", pinyin: "gāotiě", pos: "n.", meaning: "kereta cepat", example: "我坐高铁去上海。" },
+    { hanzi: "行", pinyin: "xíng", pos: "v./adj.", meaning: "boleh; bisa", example: "明天见面,行不行?" },
+    { hanzi: "路口", pinyin: "lùkǒu", pos: "n.", meaning: "persimpangan", example: "在那个路口往右拐。" },
+    { hanzi: "小心", pinyin: "xiǎoxīn", pos: "v./adj.", meaning: "hati-hati", example: "过马路的时候要小心。" },
+    { hanzi: "迟到", pinyin: "chídào", pos: "v.", meaning: "terlambat", example: "他今天上课迟到了。" },
+    { hanzi: "红绿灯", pinyin: "hónglǜdēng", pos: "n.", meaning: "lampu lalu lintas", example: "前面有一个红绿灯。" },
+    { hanzi: "后来", pinyin: "hòulái", pos: "n.", meaning: "kemudian; setelah itu", example: "后来他就搬家了。" },
+    { hanzi: "急", pinyin: "jí", pos: "adj./v.", meaning: "buru-buru; cemas", example: "别急,慢慢说。" },
+    { hanzi: "如果", pinyin: "rúguǒ", pos: "conj.", meaning: "jika; kalau", example: "如果明天下雨,我们就不去了。" },
+    { hanzi: "以前", pinyin: "yǐqián", pos: "n.", meaning: "dahulu; sebelumnya", example: "以前这里没有地铁。" },
+    { hanzi: "耳机", pinyin: "ěrjī", pos: "n.", meaning: "headphone", example: "我的耳机没电了。" },
+    { hanzi: "充电宝", pinyin: "chōngdiànbǎo", pos: "n.", meaning: "power bank", example: "你有充电宝吗?" },
+    { hanzi: "常用", pinyin: "cháng yòng", pos: "adj.phr.", meaning: "yang sering digunakan", example: "这是我常用的手机软件。" },
+    { hanzi: "越", pinyin: "yuè", pos: "adv.", meaning: "semakin (越...越...)", example: "外面的雨越下越大。" },
+    { hanzi: "分开", pinyin: "fēnkāi", pos: "v.", meaning: "berpisah", example: "我们在车站分开了。" },
+    { hanzi: "检查", pinyin: "jiǎnchá", pos: "v.", meaning: "memeriksa", example: "出门以前检查一下护照。" },
+    { hanzi: "刷", pinyin: "shuā", pos: "v.", meaning: "menggesek/memindai (kartu dsb.)", example: "刷护照就能进站。" },
+    { hanzi: "检票", pinyin: "jiǎnpiào", pos: "v.", meaning: "memeriksa tiket", example: "请在这里检票。" },
+    { hanzi: "电梯", pinyin: "diàntī", pos: "n.", meaning: "lift; eskalator", example: "我们坐电梯上去吧。" },
+    { hanzi: "放假", pinyin: "fàngjià", pos: "v.", meaning: "libur", example: "我们下周放假。" },
+    { hanzi: "沙发", pinyin: "shāfā", pos: "n.", meaning: "sofa", example: "他坐在沙发上看电视。" },
+    { hanzi: "安静", pinyin: "ānjìng", pos: "adj.", meaning: "tenang; sepi", example: "图书馆里很安静。" },
+    { hanzi: "选择", pinyin: "xuǎnzé", pos: "v.", meaning: "memilih", example: "你可以选择坐高铁或者坐飞机。" },
+    { hanzi: "必须", pinyin: "bìxū", pos: "adv.", meaning: "harus", example: "明天必须早点儿起床。" }
+  ]
+};

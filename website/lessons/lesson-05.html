@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pelajaran 5 · 这样的照片才好看</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <h1 id="lesson-title-cn">Pelajaran 5</h1>
+    <p id="lesson-title-en"></p>
+  </div>
+</header>
+
+<div class="breadcrumb"><a href="../index.html">← Semua Pelajaran</a></div>
+
+<main>
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="tab-vocab">📖 Kosakata</button>
+    <button class="tab-btn" data-tab="tab-flashcard">🔄 Flashcard</button>
+    <button class="tab-btn" data-tab="tab-quiz">📝 Kuis</button>
+  </div>
+
+  <section id="tab-vocab" class="tab-panel active">
+    <div id="vocab-mount"></div>
+  </section>
+
+  <section id="tab-flashcard" class="tab-panel">
+    <div id="flashcard-mount"></div>
+  </section>
+
+  <section id="tab-quiz" class="tab-panel">
+    <div id="quiz-mount"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <a href="../index.html">← Semua Pelajaran</a>
+  <span id="lesson-nav"></span>
+</footer>
+
+<script src="../data.js"></script>
+<script src="lesson-05.js"></script>
+<script src="../script.js"></script>
+<script>
+  document.getElementById("lesson-title-cn").textContent = "Pelajaran " + LESSON_DATA.id + " · " + LESSON_DATA.title_cn;
+  document.getElementById("lesson-title-en").textContent = LESSON_DATA.title_en;
+  document.title = "Pelajaran " + LESSON_DATA.id + " · " + LESSON_DATA.title_cn;
+
+  HSK.renderVocabTable(LESSON_DATA.vocab, "vocab-mount");
+  HSK.initFlashcards(LESSON_DATA.vocab, "flashcard-mount");
+  HSK.initQuiz(LESSON_DATA.vocab, "quiz-mount", LESSON_DATA.id, 12);
+  HSK.initTabs();
+
+  (function () {
+    const id = LESSON_DATA.id;
+    const prev = ALL_LESSONS.find((l) => l.id === id - 1 && l.ready);
+    const next = ALL_LESSONS.find((l) => l.id === id + 1 && l.ready);
+    let html = "";
+    if (prev) html += '<a href="lesson-' + String(prev.id).padStart(2, "0") + '.html">← Pelajaran ' + prev.id + "</a> &nbsp; ";
+    if (next) html += '<a href="lesson-' + String(next.id).padStart(2, "0") + '.html">Pelajaran ' + next.id + " →</a>";
+    document.getElementById("lesson-nav").innerHTML = html;
+  })();
+</script>
+</body>
+</html>

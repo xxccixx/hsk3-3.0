@@ -1,0 +1,33 @@
+const LESSON_DATA = {
+  id: 3,
+  title_cn: "这个小区挺好的",
+  title_en: "This neighborhood is pretty nice",
+  vocab: [
+    { hanzi: "初中", pinyin: "chūzhōng", pos: "n.", meaning: "SMP (sekolah menengah pertama)", example: "我妹妹在上初中。" },
+    { hanzi: "咱们", pinyin: "zánmen", pos: "pron.", meaning: "kita", example: "咱们一起去吃饭吧。" },
+    { hanzi: "换", pinyin: "huàn", pos: "v.", meaning: "mengganti", example: "我想换一个新手机。" },
+    { hanzi: "房子", pinyin: "fángzi", pos: "n.", meaning: "rumah", example: "这个房子很大。" },
+    { hanzi: "小区", pinyin: "xiǎoqū", pos: "n.", meaning: "kompleks perumahan", example: "我家的小区很安静。" },
+    { hanzi: "环境", pinyin: "huánjìng", pos: "n.", meaning: "lingkungan", example: "这里的环境很好。" },
+    { hanzi: "挺", pinyin: "tǐng", pos: "adv.", meaning: "cukup; lumayan", example: "这个电影挺好看的。" },
+    { hanzi: "空调", pinyin: "kōngtiáo", pos: "n.", meaning: "AC", example: "房间里的空调坏了。" },
+    { hanzi: "洗衣机", pinyin: "xǐyījī", pos: "n.", meaning: "mesin cuci", example: "我家的洗衣机是新买的。" },
+    { hanzi: "层", pinyin: "céng", pos: "m.", meaning: "lantai (tingkat)", example: "我住在三层。" },
+    { hanzi: "花园", pinyin: "huāyuán", pos: "n.", meaning: "taman", example: "他家有一个小花园。" },
+    { hanzi: "灯", pinyin: "dēng", pos: "n.", meaning: "lampu", example: "请把灯关了。" },
+    { hanzi: "关", pinyin: "guān", pos: "v.", meaning: "mematikan; menutup", example: "出门的时候记得关灯。" },
+    { hanzi: "冰箱", pinyin: "bīngxiāng", pos: "n.", meaning: "kulkas", example: "冰箱里没有水果了。" },
+    { hanzi: "卫生间", pinyin: "wèishēngjiān", pos: "n.", meaning: "kamar mandi", example: "卫生间在哪儿?" },
+    { hanzi: "打扫", pinyin: "dǎsǎo", pos: "v.", meaning: "membersihkan", example: "周末我要打扫房间。" },
+    { hanzi: "搬家", pinyin: "bānjiā", pos: "v.", meaning: "pindah rumah", example: "我们下个月要搬家。" },
+    { hanzi: "办", pinyin: "bàn", pos: "v.", meaning: "mengurus", example: "我要去银行办信用卡。" },
+    { hanzi: "信用卡", pinyin: "xìnyòngkǎ", pos: "n.", meaning: "kartu kredit", example: "你可以用信用卡付钱。" },
+    { hanzi: "还", pinyin: "huán", pos: "v.", meaning: "mengembalikan", example: "我明天把书还给你。" },
+    { hanzi: "听说", pinyin: "tīngshuō", pos: "v.", meaning: "dengar bahwa", example: "听说这家饭馆很好吃。" },
+    { hanzi: "银行", pinyin: "yínháng", pos: "n.", meaning: "bank", example: "银行几点开门?" },
+    { hanzi: "才", pinyin: "cái", pos: "adv.", meaning: "baru (menandakan terlambat/lama)", example: "他晚上十点才回家。" },
+    { hanzi: "纸", pinyin: "zhǐ", pos: "n.", meaning: "kertas", example: "请给我一张纸。" },
+    { hanzi: "搬", pinyin: "bān", pos: "v.", meaning: "memindahkan", example: "请帮我搬这个箱子。" },
+    { hanzi: "需要", pinyin: "xūyào", pos: "v./n.", meaning: "membutuhkan; kebutuhan", example: "你需要什么帮助?" }
+  ]
+};

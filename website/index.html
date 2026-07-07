@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HSK 标准教程 3 - Belajar Kosakata</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <h1>HSK 标准教程 3 · Belajar Kosakata</h1>
+    <p>18 pelajaran &middot; kosakata inti, flashcard, dan kuis untuk tiap pelajaran</p>
+  </div>
+</header>
+
+<main>
+  <p>Pilih pelajaran di bawah untuk melihat daftar kosakata (生词), flashcard bolak-balik, dan kuis pilihan ganda. Skor kuis kamu tersimpan otomatis di browser ini.</p>
+  <div class="lesson-grid" id="lesson-grid"></div>
+</main>
+
+<footer class="site-footer">
+  <span>HSK 标准教程 3 (3.0) — materi belajar mandiri</span>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+<script>
+  const grid = document.getElementById("lesson-grid");
+  grid.innerHTML = ALL_LESSONS.map((l) => {
+    if (!l.ready) {
+      return '<div class="lesson-card" style="opacity:0.5;pointer-events:none;">' +
+        '<span class="lesson-num">' + l.id + '</span>' +
+        '<h3>' + l.title_cn + '</h3>' +
+        '<p class="en-title">' + l.title_en + '</p>' +
+        '<div class="meta"><span>Segera hadir</span></div>' +
+        '</div>';
+    }
+    return '<a class="lesson-card" href="lessons/lesson-' + String(l.id).padStart(2, "0") + '.html">' +
+      '<span class="lesson-num">' + l.id + '</span>' +
+      '<h3>' + l.title_cn + '</h3>' +
+      '<p class="en-title">' + l.title_en + '</p>' +
+      '<div class="meta"><span>' + l.count + ' kosakata</span>' +
+      '<span class="badge-score" data-lesson-badge="' + l.id + '" style="display:none;"></span></div>' +
+      '</a>';
+  }).join("");
+  HSK.renderHomepageBadges();
+</script>
+</body>
+</html>
